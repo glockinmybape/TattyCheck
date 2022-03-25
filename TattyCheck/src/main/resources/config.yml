@@ -1,0 +1,43 @@
+prefix: '§b§lCHECK §7| §f'
+commands-check:
+  - 'tp %admin% %player%'
+events:
+  cancel:
+    commands:
+      - 'tempban %player% 30d Читы'
+  ignore:
+    commands:
+      - 'tempban %player% 30d Игнор проверки'
+  leave:
+    commands:
+      - 'tempban %player% 30d Лив с проверки'
+  deleted:
+    commands:
+      - 'tempban %player% 30d Удалённые читы'
+  cheater:
+    commands:
+      - 'tempban %player% 14d Признание'
+help:
+  - ''
+  - '&B&LTATTYCHECK'
+  - ''
+  - '&f&l⎪ &b/check (никнейм) &b- &fПроверить игрока на читы'
+  - '&f&l⎪ &b/check (никнейм) &bcancel &b- &fИгрок не прошел проверку'
+  - '&f&l⎪ &b/check (никнейм) &bconfirm &b- &fИгрок успешно прошел проверку'
+  - '&f&l⎪ &b/check (никнейм) &bleave &b- &fИгрок ливнул с проверки'
+  - '&f&l⎪ &b/check (никнейм) &bdeleted &b- &fУ игрока удаленные читы'
+  - '&f&l⎪ &b/check (никнейм) &bignore &b- &fИгрок игнорирует проверку'
+  - '&f&l⎪ &b/settype &f(&bDiscord/AnyDesk&f) &b- &fУстановить тип проверки'
+  - ''
+messages:
+  check-discord:
+    - '&b&lCHECK &7| &fПроверка на читы от Модератора &b%admin%&f.'
+    - '&b&lCHECK &7| &fНапишите команду &b/msg %admin% [ваш дискорд]'
+    - ''
+    - '&b&lCHECK &7| &fЧтобы сознаться в читах введите &b/cheater'
+  check-anydesk:
+    - '&b&lCHECK &7| &fПроверка на читы от Модератора &b%admin%&f.'
+    - '&b&lCHECK &7| &fНапишите команду &b/msg %admin% [ваш анидеск]'
+    - ''
+    - '&b&lCHECK &7| &fЧтобы сознаться в читах введите &b/cheater'
+  title-check: '&b&lПРОВЕРКА НА ЧИТЫ%nl%&7Обратите внимание на чат!'

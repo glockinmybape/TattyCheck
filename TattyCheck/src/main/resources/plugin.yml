@@ -1,0 +1,9 @@
+name: TattyCheck
+version: '2.0'
+main: org.glockinmybape.tattycheck.Main
+authors: [ glockinmybape ]
+description: TattyCheck
+commands:
+  check:
+  cheater:
+  settype:
